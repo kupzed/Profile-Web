@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+p {
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    width: 1100px;
+    margin: 0 auto;
+    color: #054C26;
+}
+
+/* title */
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: #054C26;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.pre-title::before {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: #054C26;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+/* logo dan navbar menu */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    transition: 0.2 ease-in-out;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.logo a {
+    color: #054C26;
+}
+
+nav ul li a {
+    color: #054C26;
+}
+
+/* Home Section */
+#home {
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.home-name {
+    font-size: 3rem;
+    font-weight: 700px;
+    margin: 0.5rem 0 1rem;
+    color: #054C26;
+}
+
+.home-right img {
+    width: 400px;
+    border-radius: 2rem;
+}
+
+.home-right {
+    display: flex;
+    justify-content: right;
+}
+
+section {
+    padding-left: 3rem;
+    padding-bottom: 5rem;
+}
+
+/* About Section */
+#about {
+    background-color: white;
+    padding: 6rem 0;
+}
+
+.section-title-about {
+    text-align: center;
+    margin: 1rem 0 2rem;
+    color: #054C26;
+    font-size: 2rem;
+}
+
+.paragraph-about {
+    text-align: left;
+    color: #054C26;
+}
+
+.education1-left {
+    float: left;
+}
+
+.education1-right {
+    float: right;
+    font-style: italic;
+}
+
+.education2-left {
+    float: left;
+}
+
+.education2-right {
+    float: right;
+    font-style: italic;
+}
+
+/* Layout */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.about {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: #054C26;
+    border-radius: 1rem;
+}
+
+.about h4 {
+    color: white;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.about p {
+    color: white;
+    text-align: left;
+}
+
+.about-icon {
+    background-color: white;
+    width: 100px;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 1rem;
+}
+/* End of About */
+
+/* Portfolio */
+
+.porto-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.porto {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* End of Portfolio */
+
+/* Contact Section */
+
+#contact {
+    padding: 6rem;
+}
+
+.contact-form div {
+    margin-bottom: 1.4rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    font-family: "Montserrat";
+    background: white;
+    border: 1px solid #054C26;
+    border-radius: 3px;
+    resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #054C26;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 1px solid #054C26;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    background-color: #054C26;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-submit:hover {
+    background-color: white;
+    color: #054C26;
+}
+/* End of Contact */
+
+/* Footer */
+footer {
+    margin-bottom: 1rem;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.footer-icons {
+    margin-bottom: 1rem;
+}
+
+.footer-icons a {
+    margin: 0 0.3rem;
+}
+
+.footer-icons a:hover {
+    fill: black;
+}
+
+.footer-icons {
+    fill: gray;
+}
